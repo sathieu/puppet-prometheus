@@ -51,10 +51,6 @@ matrix:
     env: PUPPET_INSTALL_TYPE=agent CHECK=acceptance BEAKER_debug=true BEAKER_set=docker/debian-8
     services: docker
     sudo: required
-branches:
-  only:
-  - master
-  - /^v\d/
 notifications:
   email: false
 deploy:
